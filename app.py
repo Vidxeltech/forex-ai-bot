@@ -37,7 +37,7 @@ import asyncio
 SIGNAL_VERSION = "2.0.0"
 
 # 1) Telegram bot token
-BOT_TOKEN = ""  # <-- PUT YOUR TELEGRAM BOT TOKEN HERE
+BOT_TOKEN = os.getenv("BOT_TOKEN", "")  # <-- PUT YOUR TELEGRAM BOT TOKEN HERE
 
 # 2) Data providers (keys can also come from env vars)
 DATA_PROVIDERS = {
